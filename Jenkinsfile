@@ -5,7 +5,7 @@ pipeline {
             steps {
                 // A simple build step: print a message and run the python script
                 echo 'Building the project...'
-                sh 'python3 hello.py'
+                sh '/usr/bin/python3 hello.py'
             }
         }
         stage('Test') {
